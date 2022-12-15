@@ -26,12 +26,15 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-
+      <!-- Navbar starts -->
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item"> Home </a>
+          <a class="navbar-item" href="index.html"> Home </a>
 
-          <a class="navbar-item"> Documentation </a>
+          <a class="navbar-item" href="about.html"> About </a>
+          <a class="navbar-item" href="music.html"> Music </a>
+          <a class="navbar-item" href="discography.html"> Discography </a>
+          <a class="navbar-item" href="tours.html"> Tours </a>
         </div>
 
         <div class="navbar-end">
@@ -41,17 +44,66 @@
         </div>
       </div>
     </nav>
-
+    <!-- navbar ends -->
+    <h1 class="has-text-centered is-size-1">Home</h1>
+    <!-- Noah finnce image embedded -->
     <section class="section">
       <div class="container">
-        <h1 class="title">
-          <figure class="image is-128x128">
-            <img src="Images/NoahFinnceName.png" />
-          </figure>
+        <figure class="image is-128x128">
+          <img src="Images/NoahFinnceName.png" />
+        </figure>
 
-          <img src="Images/NoahFinnceProfile.jpg" />
-        </h1>
-        <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+        <!-- Rows and columns -->
+        <!-- picture -->
+        <div class="columns">
+          <div class="column">
+            <p class="bd-notification is-info">
+              <img src="Images/NoahFinnceProfile.jpg" />
+            </p>
+            <div class="columns is-mobile">
+              <!-- social media -->
+
+              <div class="column">
+                <p class="bd-notification is-info">Noah's social media</p>
+                <div class="columns">
+                  <div class="column">
+                    <img src="images/InstagramLogo.png" />
+                  </div>
+                  <div class="column">
+                    <img src="images/FacebookIcon.png" />
+                  </div>
+                  <div class="column">
+                    <img src="images/Youtubeicon.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <a
+              href="https://www.upsetmagazine.com/features/noahfinnce-interview-jun22"
+            >
+              <img src="images/Upset.jpeg" />
+            </a>
+            <div class="columns is-mobile">
+              <div class="column is-half">
+                <div class="bd-notification is-danger">
+                  Stream
+                  <section>
+                    <div class="columns">
+                      <div class="column">
+                        <img src="images/Soundcloudlogo.png" />
+                      </div>
+                      <div class="column">
+                        <img src="images/Spotifylogo.png" />
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Noah Finnce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io"> Noah Finnce </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- Navbar starts -->
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Home </a>
+
+          <a class="navbar-item" href="about.html"> About </a>
+          <a class="navbar-item" href="music.html"> Music </a>
+          <a class="navbar-item" href="discography.html"> Discography </a>
+          <a class="navbar-item" href="tours.html"> Tours </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+    <h1 class="has-text-centered is-size-1">About</h1>
+    <p class="has-text-centered">
+      Born: August 18, 1999 <br />
+      Birthplace: Buckinghamshire, UK <br />
+      Gender: Male<br />
+      Sexuality: Bisexual
+    </p>
+
+    <p class="has-text-centered mt-2">
+      Noah finance is a staple to the LGBT <br />Community in the UK. He Is most
+      popular <br />for his punk pop music. His target demographic for his music
+      is <br />LGBT teenagers.
+    </p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
